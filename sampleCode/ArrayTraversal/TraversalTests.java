@@ -2,7 +2,7 @@
 public class TraversalTests {
    public static void main(String[] args) {
       boolean part1 = false;
-      boolean part2 = false;
+      boolean part2 = true;
       boolean part3 = false;
       boolean part4 = false;
       
@@ -35,7 +35,15 @@ public class TraversalTests {
        */
        
       // Your code goes below this line (suggested length: ~10 lines)
-      System.out.println(arr);      
+      if (arr.length == 0) {
+         System.out.println("[]");
+      } else {
+         System.out.print("[" + arr[0]);
+         for (int i = 1; i < arr.length; i++) {
+            System.out.print(", " + arr[i]);
+         }
+         System.out.println("]");  
+      }
    }
    
    public static boolean areArraysEqual(int[] arr1, int[] arr2) {
@@ -44,16 +52,19 @@ public class TraversalTests {
        * input arrays, arr1 and arr2, are equal.
        * First, think about what it means for two arrays to be equal.
        * There are two requirements:
-       *    1) 
-       *    2) 
+       *    0) same data type (this will always be true for this method)
+       *    1) Same Length
+       *    2) all elements to be the same
        * Then, think about which is easier to verify:
        *    - two arrays are equal
        *    - two arrays are *not* equal
        */
        
       // Your code goes below this line (suggested length: ~10 lines)
+      // first, check if same length. If not, return false
+      // then, check each element, if not the same return false
+      // if you made it this far, return true
       return false;
-      
    }
    
    public static int[] findAndReplace(int[] arr, int findValue, int replaceValue) {
