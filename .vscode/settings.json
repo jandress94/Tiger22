@@ -1,9 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "studentWork/Wordle",
-        "studentWork/ClassesIntro",
-        "sampleCode/Arrays",
-        "sampleCode/ArrayTraversal",
-        "sampleCode/EncapsulatedBankAccount"
+        "sampleCode/Inheritance",
+        "sampleCode/ElevensLab/Activity2",
+        "sampleCode/Trio"
     ]
 }
